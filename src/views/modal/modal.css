@@ -1,0 +1,79 @@
+.order-modal,
+.delete-modal,
+.no-modal,
+.all-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.order-modal.show,
+.delete-modal.show,
+.no-modal.show,
+.all-modal.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-body {
+  position: relative;
+  width: 320px;
+  height: 180px;
+  margin: auto;
+  padding-top: 40px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+  font-weight: 600;
+}
+
+.order-button-parent,
+.delete-button-parent {
+  margin-top: 30px;
+}
+
+#order-popup-process,
+#order-popup-cancel,
+#delete-popup-process,
+#delete-popup-cancel,
+#no-popup-process,
+#all-popup-process,
+#all-popup-cancel {
+  color: white;
+  font-weight: 800;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px 30px;
+  border: none;
+  cursor: pointer;
+}
+
+#order-popup-process,
+#delete-popup-process,
+#all-popup-process,
+#no-popup-process {
+  background: #a269ff;
+  margin-right: 20px;
+}
+
+#no-popup-process {
+  margin-right: 0;
+  margin-top: 30px;
+}
+
+#order-popup-cancel,
+#delete-popup-cancel,
+#all-popup-cancel {
+  background: #767676;
+}
+
+/* test-toggle */
+.no-modal {
+    display: flex;
+}

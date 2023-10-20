@@ -1,0 +1,69 @@
+html {
+  background-color: #a269ff;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/********** Bulma 오버라이딩하여 커스터마이징 **********/
+.box {
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.3);
+  border-radius: 16px;
+}
+
+.button.is-link {
+  background-color: #a269ff;
+}
+
+.button.is-link:hover {
+  background-color: #a269ff;
+}
+
+.button.is-outlined {
+  border-color: #a269ff;
+  color: #a269ff;
+}
+
+/********** 로그인 폼 **********/
+#welcome-text {
+  text-align: center;
+  margin: 40px auto;
+  color: #a269ff;
+  font-family: "Sansita", "Noto Sans KR", sans-serif;
+  font-style: italic;
+}
+
+#welcome-text > span {
+  font-size: 30px;
+}
+
+#welcome-text > h1 {
+  font-size: 40px;
+  display: inline;
+}
+
+#login-form {
+  width: 500px;
+  margin: 100px auto;
+  padding: 10px 40px;
+  text-align: left;
+}
+
+#login-button {
+  width: 100%;
+  margin: 40px 0 20px 0;
+  text-align: center;
+  display: block;
+}
+
+#non-member-login-button {
+  width: 100%;
+  margin: 15px 0 10px 0;
+  text-align: center;
+  display: block;
+}
+
+/* #login-etc {
+  font-size: 13px;
+} */

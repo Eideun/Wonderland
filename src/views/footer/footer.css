@@ -1,0 +1,30 @@
+* {
+  color: rgb(232, 232, 232);
+  font-size: 18px;
+  font-family: 'Noto Sans KR', sans-serif;
+
+}
+.wrap {
+  width: 1920px;
+  height: auto;
+  background-color: #858585;
+}
+.inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.info {
+  padding: 40px 0;
+}
+ul {
+  padding: 0 0 10px 0;
+}
+li {
+  display: inline-block;
+  text-align: left;
+  
+}
+li>a {
+  color: rgb(232, 232, 232);
+}

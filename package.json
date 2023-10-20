@@ -1,0 +1,47 @@
+{
+  "name": "wonderland",
+  "description": "_이렇게 감싸면 이텔릭체_ **이렇게 감싸면 볼드체**",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start:dev": "nodemon babel-node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://kdt-gitlab.elice.io/sw_track/class_05/web_project/team10/wonderland.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.22.7",
+    "@sindresorhus/is": "^5.4.1",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "consolidate": "^1.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.3.4",
+    "multer": "^1.4.5-lts.1",
+    "mustache": "^4.2.0",
+    "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.6",
+    "@babel/core": "^7.22.8",
+    "@babel/node": "^7.22.6",
+    "@babel/preset-env": "^7.22.7",
+    "@babel/preset-typescript": "^7.22.5",
+    "nodemon": "^3.0.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env"
+    ]
+  },
+  "type": "module"
+}

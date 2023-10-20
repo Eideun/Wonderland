@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>주문 조회</title>
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Sansita:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bulma, CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="account-orders.css" />
+
+    <!-- javascript -->
+    <script defer type="module" src="account-orders.js"></script>
+
+    <!-- 파비콘 -->
+    <link href="/src/images/wonderland_logo.png" rel="icon" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header id="navbar"></header>
+
+    <main>
+      <!-- <div id="title-div">
+        <h1>Wonderland</h1>
+      </div> -->
+
+      <section id="orders-section">
+        <div id="page-title-div">
+          <h4 class="title is-4">주문 조회</h4>
+        </div>
+        <div id="filter">
+          <!-- 날짜 범위 버튼들-->
+          <button id="today-button" class="button is-outlined">오늘</button>
+          <button id="one-week-button" class="button is-outlined">1주일</button>
+          <button id="one-month-button" class="button is-outlined">1개월</button>
+          <button id="three-months-button" class="button is-outlined">3개월</button>
+
+          <!-- 날짜 범위 달력-->
+          <div id="date-div">
+            <input id="start-date" class="input" type="date" />
+            <span>&nbsp;&nbsp;~&nbsp;&nbsp;</span>
+            <input id="end-date" class="input" type="date" />
+          </div>
+        </div>
+
+        <table id="order-list" class="table is-hoverable">
+          <thead id="test">
+            <tr>
+              <td>날짜</td>
+              <td>주문정보</td>
+              <td>주문총액</td>
+              <td>상태</td>
+              <td>신청</td>
+            </tr>
+          </thead>
+
+          <tbody id="order-list-body">
+            <tr>
+              <td id="empty-message" colspan="5">주문 내역이 없습니다</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 주문 내역 페이지 버튼 -->
+      <!-- <nav class="pagination is-rounded" role="navigation" aria-label="pagination">
+        <ul class="pagination-list">
+          <li>
+            <a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a>
+          </li>
+          <li>
+            <a class="pagination-link" aria-label="Goto page 2">2</a>
+          </li>
+          <li>
+            <a class="pagination-link" aria-label="Goto page 3">3</a>
+          </li>
+          <li>
+            <a class="pagination-link" aria-label="Goto page 4">4</a>
+          </li>
+        </ul>
+      </nav> -->
+    </main>
+  </body>
+</html>

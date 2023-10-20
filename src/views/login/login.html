@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>로그인</title>
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Sansita:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bulma, CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="login.css" />
+
+    <!-- javascript -->
+    <script defer type="module" src="login.js"></script>
+
+    <!-- 파비콘 -->
+    <link href="/src/images/wonderland_logo.png" rel="icon" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header id="navbar"></header>
+
+    <main>
+      <form id="login-form" class="box">
+        <div id="welcome-text">
+          <span>Welcome to </span>
+          <h1>Wonderland!</h1>
+        </div>
+
+        <div class="field">
+          <label class="label">아이디(이메일)</label>
+          <div class="control">
+            <input id="id-input" class="input" type="email" required />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">비밀번호</label>
+          <div class="control">
+            <input id="password-input" class="input" type="password" required />
+          </div>
+        </div>
+
+        <div>
+          <button id="login-button" class="button is-link">로그인</button>
+        </div>
+
+        <!-- <div id="login-etc">
+          <a id="">아이디 찾기</a>
+          <span> | </span>
+          <a>비밀번호 찾기</a>
+        </div> -->
+      </form>
+    </main>
+  </body>
+</html>

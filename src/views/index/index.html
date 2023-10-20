@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wonderland</title>
+
+  <!--아이콘-->
+  <link href="/src/images/wonderland_logo.png" rel="icon" type="image/x-icon" />
+
+  <!--css-->
+  <link rel="stylesheet" href="./index.css">
+
+  <!-- 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Sansita:wght@800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+
+
+  <!-- javascript -->
+  <script defer type="module" src="./index.js"></script>
+  <script defer type="module" src="./nav.js"></script>
+
+  <!--swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+  <div id="navbar"></div>
+  <header>
+    <h1 class="logo"><a href="">Wonderland</a></h1>
+    <nav>
+
+      <!--메인네비-->
+
+      <div id="gnb-wrap">
+        <ul class="gnb-inner">
+          <li class="sub-menu-parent" tab-index="1">
+            <a class="w_3502" href="">태교용 도서</a>
+          </li>
+          <li class="sub-menu-parent" tab-index="1">
+            <a class="w_3502" href="">놀이용 도서</a>
+          </li>
+          <li class="sub-menu-parent" tab-index="1">
+            <a class="w_3502" href="">어린이 동화</a>
+          </li>
+          <li class="sub-menu-parent" tab-index="1">
+            <a class="w_3502" href="">외국어 동화</a>
+          </li>
+          <li class="sub-menu-parent" tab-index="1">
+            <a class="w_3502" href="">과학 / IT</a>
+          </li>
+          <li class="sub-menu-parent" tab-index="1">
+            <a class="w_3502" href="">미술 / 음악</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="main_contents">
+    <div class="visual-wrap bgc01">
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img
+              src="https://cache.wjthinkbig.com/WJMALL/FI-20230712111732950/74B72A4D-83D7-47B5-AA0B-9FEEC23577C3.JPG"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://cache.wjthinkbig.com/WJMALL/FI-20230712164325684/6420671D-E078-442C-AD49-1467A0DD97A2.PNG"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://cache.wjthinkbig.com/WJMALL/FI-20230621132855744/454C62D4-7AC3-43F4-BBF6-9C0D26E0B581.JPG"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://cache.wjthinkbig.com/WJMALL/FI-20230630152150741/3851291A-5E64-4D38-8DF3-2569EC69AFA1.JPG"
+              alt=""></div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper1", {
+          spaceBetween: 0,
+          centeredSlides: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            type: "bullets",
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+          },
+        });
+      </script>
+
+    </div><!--//visual-wrap-->
+
+    <div class="another_wrapper">
+
+      <div class="second_bestseller">
+        <div class="inner">
+          <div class="text_area">
+            <h2 class="title1"> BEST SELLER</h2>
+            <p class="sub_title">| 원더랜드 북킷리스트, 베스트 샐러</p>
+          </div>
+          <div class="book_img">
+            <ul>
+              <li><a href="">
+                  <div class="big"><img
+                      src="https://cache.wjthinkbig.com/WJMALL/FI-20230613173938571/53807CE1-CA8E-4929-AA0C-8D7B9952BC36.JPG"
+                      alt=""></div>
+                </a></li>
+              <li class="small"><a href="">
+                  <div class="circle_img_box"><img
+                      src="https://cache.wjthinkbig.com/WJMALL/FI-20220729155045717/8FF51FA9-D272-4491-BAF7-B09CC45A589E.PNG"
+                      alt=""></div>
+                </a></li>
+              <li class="small"><a href="">
+                  <div class="circle_img_box"><img
+                      src="https://cache.wjthinkbig.com/WJMALL/FI-20211119104640173/5F0486B6-F332-4A91-9A68-DFC9B034FA56.JPG"
+                      alt=""></div>
+                </a></li>
+            </ul>
+          </div>_
+        </div>
+      </div>
+
+      <div class="third_newbook">
+        <div class="inner">
+          <div class="title_box">
+            <h2>NEW BOOK</h2>
+            <p>원더랜드의 새로운 책</p>
+          </div>
+          <div class="banner_wrap">
+            <div class="banner">
+              <!--slide-->
+              <div #swiperRef="" class="swiper mySwiper2">
+
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img
+                      src="https://cache.wjthinkbig.com/WJMALL/FI-20221031104243812/A30DFB2F-4EE2-465C-A66A-465F4A35B128.JPG"
+                      alt=""></div>
+                  <div class="swiper-slide"><img
+                      src="https://cache.wjthinkbig.com/WJMALL/FI-20220914105554844/090160E0-E5C5-419A-A585-DF2D9AE940F8.JPG"
+                      alt=""></div>
+                  <div class="swiper-slide"><img
+                      src="https://cache.wjthinkbig.com/WJMALL/FI-20220822133135005/BE9F17C4-ED82-4E66-821D-2E8CBF121BFC.JPG"
+                      alt=""></div>
+                  <div class="swiper-slide"><img
+                      src="https://cache.wjthinkbig.com/WJMALL/FI-20190522162701064/3B5CD174-5A41-4EC1-9C17-2EEB3685FB6B.JPG"
+                      alt=""></div>
+                  <div class="swiper-slide"><img
+                      src="https://cache.wjthinkbig.com/WJMALL/FI-20190313110703220/25B535A5-6908-4A4A-A682-BFBC8E794192.JPG"
+                      alt=""></div>
+                  <div class="swiper-slide"><img
+                      src="https://cache.wjthinkbig.com/WJMALL/FI-20190826093337912/BBA4F348-1DC6-474F-9A86-879D8B575703.JPG"
+                      alt=""></div>
+                  <div class="swiper-slide"><img
+                      src="https://cache.wjthinkbig.com/WJMALL/FI-20181207180230562/9FBB5249-C3E1-42E2-8AD9-7B81D7F9CDD5.JPG"
+                      alt=""></div>
+                  <div class="swiper-slide"><img
+                      src="https://cache.wjthinkbig.com/WJMALL/FI-20180612102603888/9E5B278C-300E-414A-8E32-4877B2DB46FB.JPG"
+                      alt=""></div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+              </div>
+
+              <!-- Swiper JS -->
+              <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+              <!-- Initialize Swiper -->
+              <script>
+                var swiper = new Swiper(".mySwiper2", {
+                  slidesPerView: 4,
+                  centeredSlides: false,
+                  spaceBetween: 30,
+                  pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                  },
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },
+                });
+
+                var appendNumber = 4;
+                var prependNumber = 1;
+                document
+                  .querySelector(".prepend-2-slides")
+                  .addEventListener("click", function (e) {
+                    e.preventDefault();
+                    swiper.prependSlide([
+                      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                    ]);
+                  });
+                document
+                  .querySelector(".prepend-slide")
+                  .addEventListener("click", function (e) {
+                    e.preventDefault();
+                    swiper.prependSlide(
+                      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+                    );
+                  });
+                document
+                  .querySelector(".append-slide")
+                  .addEventListener("click", function (e) {
+                    e.preventDefault();
+                    swiper.appendSlide(
+                      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+                    );
+                  });
+                document
+                  .querySelector(".append-2-slides")
+                  .addEventListener("click", function (e) {
+                    e.preventDefault();
+                    swiper.appendSlide([
+                      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                    ]);
+                  });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div><!--//curation-->
+
+      <div class="fourth_content">
+        <div class="inner">
+          <div class="text_area">
+            <h2 class="title1"> WONDER EXHIBITION</h2>
+            <p class="sub_title">기쁨과 즐거움을 가득 담은 기획전 모음!</p>
+          </div>
+          <div class="img_wrap">
+            <div class="fourth_img_box">
+              <img src="https://cache.wjthinkbig.com/WJMALL/FI-20230621132402909/53617C03-DAD6-4CC2-B397-723FFBD61594.JPG" alt="">
+            </div>
+            <div class="fourth_img_box">
+              <img src="https://cache.wjthinkbig.com/WJMALL/FI-20230209143311234/E3F1D571-1150-408E-B032-9E211448D7E0.JPG" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-wrapper">
+    <footer>
+      <ul class="footer-ul">
+        <li><a href="">회사소개 ｜</a></li>
+        <li><a href="">이용약관 ｜</a></li>
+        <li><a href="">개인정보 처리방침 ｜</a></li>
+        <li><a href="">고객센터</a></li>
+      </ul>
+      <div class="inform">
+        <p>
+          (주)원더랜드 ｜대표자명 : 엘리스 ｜사업자등록번호 : 101-01-0101 ｜통신판매업신고 : 서울강남-010<br>
+          주소 : 서울특별시 강남구 선릉로 433,신관6층 ｜고객센터 : 3401-2173 (월~금 09:00 ~ 18:00, 토/일 공휴일 휴무) ｜ 이메일 : wonderland@elice.io <br>
+          COPYRIGHT © WONDERLAND ALL RIGHTS RESERVED
+        </p>
+      </div>
+    </footer>
+
+
+</body>
+
+</html>

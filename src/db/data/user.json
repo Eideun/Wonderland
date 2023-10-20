@@ -1,0 +1,16 @@
+[
+  {
+    "name": "엘리스",
+    "email": "elice@example.com",
+    "password": "123456",
+    "phone": "123-456-7890",
+    "address": {
+      "postalCode": "54321",
+      "address1": "경기도 성남시 분당구 정자동 456번지",
+      "address2": "XYZ 빌딩 10층"
+    },
+    "role": "1",
+    "createdAt": "2023-07-14T12:00:00.000Z"
+  }
+  
+]

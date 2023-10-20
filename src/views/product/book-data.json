@@ -1,0 +1,29 @@
+{
+  "dummyData": [
+    {
+      "productId": "0001",
+      "title": "과학 추리반 아이들",
+      "price": "15000",
+      "img": "https://image.yes24.com/YES24ViewerDatas/Z1191_LT/A11901/B119002/119001261_L/nsve0k193sq2spua01.jpg"
+    },
+    {
+      "productId": "0002",
+      "title": "법 만드는 아이들",
+      "price": "14000",
+      "img": "https://image.yes24.com/YES24ViewerDatas/Z1089_LT/A10883/B108823/108822391_L/xarv6ph3gcnd7iyb01.jpg",
+    },
+    {
+      "productId": "0003",
+      "title": "하루 5분 탈무드 태교 동화",
+      "price": "17000",
+      "img": "https://image.yes24.com/YES24ViewerDatas/Z413_LT/A4123/B41221/41220551_L/ty2brpracvbik4h201.jpg",
+    },
+    {
+      "productId": "0004",
+      "title": "하루 5분 아빠 목소리",
+      "price": "16000",
+      "img": "https://image.yes24.com/YES24ViewerDatas/Z151_LT/A1509/B15085/15084524_L/aod3bubs7hlqvlrf%ED%95%98%EB%A3%A8.jpg",
+      "detailImg": "https://image.yes24.com/momo/TopCate426/MidCate004/42535487.jpg"
+    }
+  ]
+}

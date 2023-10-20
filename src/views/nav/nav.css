@@ -1,0 +1,35 @@
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 20px 50px 0;
+}
+
+.nav-link {
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  text-decoration: none;
+}
+
+  /* 로고 */
+  h1 {
+    text-align: center;
+    margin: 40px auto;
+    font-size: 40px;
+    font-weight: 800;
+    color: #a269ff;
+    font-family: "Sansita", "Noto Sans KR", sans-serif;
+    font-style: italic;
+    font-size: 50px;
+  }
+  
+  h1 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h1 a:hover {
+    color:inherit;
+  }
+  

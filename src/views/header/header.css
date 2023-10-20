@@ -1,0 +1,53 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+
+}
+wrap {
+
+}
+header{
+  width: 1920px;
+  height: auto;
+}
+li{
+  display: inline-block;
+}
+
+.top_nav>ul{
+  margin: 20px 440px 10px auto;
+  text-align: right;
+}
+.top_nav>ul>li>a {
+  color: black;
+  padding: 0 5px 0 0;
+}
+.logo{
+  text-align: center;
+  margin: 30px auto 40px auto;
+}
+.logo>h1>strong{
+  font-family: 'Sansita', sans-serif;
+  font-size: 40px;
+  color: #A269FF;
+  font-weight: 700;
+}
+
+.gnb_wrap {
+  background-color: #A269FF;
+  padding: 20px 0;
+}
+.inner {
+  display: flex;
+  justify-content: center;
+}
+#gnb>li{
+  width: 200px;
+}
+
+#gnb>li>a {
+  color: white;
+  font-weight:500;
+  font-size: 18px;
+  padding: 0 10px 0 0;
+}
+

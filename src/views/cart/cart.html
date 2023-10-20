@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1440, initial-scale=1">
+    <title>Wonderland</title>
+    <!--폰트-->
+    <link href="https://fonts.cdnfonts.com/css/sansita" rel="stylesheet">
+    <!--Bulma-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/37ea6036f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cart.css">
+    <script defer type="module" src="cart.js"></script>
+    <link rel="stylesheet" href="../footer/footer.js"/>
+    <script src="../footer/footer.js"></script>
+    <link rel="stylesheet" href="/src/views/nav/nav.css" />
+    <script defer type="module" src="../nav/nav.js"></script>
+
+  </head>
+
+  <body>
+    <header id="navbar"></header>
+      <h1><a href="../index/index.html">Wonderland</a></h1>
+      
+      <!--루트 표시-->
+      <div id="root-container">
+        <ul class="root-ul">
+          <li class="shopping-cart">장바구니</li>
+          <li>></span>
+          <li>주문결제</li>
+          <li>></li>
+          <li>주문완료</li>
+        </ul>
+      </div>
+              
+      <!--카트 상단줄 + 카트메인 테이블-->
+      <div id="upper-container">
+        <table class="upper-table">
+          <thead>
+              <tr>
+              <th>
+                <input type="checkbox" id="select-all">
+              </th>
+              <th>상품사진</th>
+              <th>상품명</th>
+              <th class="hope-price">판매가</th>
+              <th>수량</th>
+              <th>합계</th>
+            </tr>
+          </thead>
+
+          <!-- 상품이 담겼을 때 -->
+          <tbody id="cartItemsTableBody">
+            <!--장바구니 공간-->
+          </tbody>
+        </table>
+       </div>
+
+       <!-- 장바구니에 담은 상품이 없을 때 -->
+      <div class="empty-cart">
+        <span class="cart-message">장바구니에 담은 상품이 없습니다.</span>
+      </div> 
+
+      <!--카트 하단줄-->
+      <div id="lower-container">
+        <div class="cart-lower">
+          <span class="lower-price">상품 구매 금액</span>                    
+          <span class="lower-emptyprice">0원</span>                      
+          <span class="lower-plus">+</span>                    
+          <span class="lower-delivery">배송비</span>
+          <span class="lower-emptydelivery">0원</span>                       
+          <span class="lower-total">합계</span>
+          <span class="lower-emptytotal">152,000원</span>
+        </div>
+      </div>
+          
+      <div id="confirm-container">
+        <ul class="order-list">
+          <li class="confirm">선택한 제품을</li>
+          <li class="del-btn">삭제하기</li>
+          <li class="pur-btn">구매하기</li>
+          <div class="btn-parent">
+             <button type="submit" class="confirm-btn">전체상품 구매하기</button>
+          </div>
+        </ul>
+      </div>
+            
+      <!--페이지 버튼-->
+      <div id="page-container">
+        <nav class="pagination" role="navigation" aria-label="pagination">
+          <a class="pagination-previous is-disabled" title="This is the first page">이전</a>
+          <a class="pagination-next">다음</a>
+          <ul class="pagination-list">
+            <li>
+              <a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a>
+            </li>
+            <li>
+              <a class="pagination-link" aria-label="Goto page 2">2</a>
+            </li>
+            <li>
+              <a class="pagination-link" aria-label="Goto page 3">3</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+      <!--주문하기 모달-->
+      <div class="order-modal">
+        <div class="modal-body">
+          <p><span class="variable-quantity">n</span><span>개의 상품을</span><br>
+            <span>구매하시겠습니까?</span></p>
+          <div class="order-button-parent">
+            <button id="order-popup-process">확인</button>
+            <button id="order-popup-cancel">취소</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 삭제버튼 모달창 -->
+      <div class="delete-modal">
+        <div class="modal-body">
+          <p><span>선택 상품을</span><br>
+            <span>삭제하시겠습니까?</span></p>
+          <div class="delete-button-parent">
+            <button id="delete-popup-process">확인</button>
+            <button id="delete-popup-cancel">취소</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 선택된 상품이 없을경우 모달 -->
+      <div class="no-modal">
+        <div class="modal-body">
+          <p><span>상품을 선택해주세요.</span></p>
+          <div class="no-button-parent">
+          <button id="no-popup-process">확인</button>
+        </div>
+        </div>
+      </div>
+
+      <!-- 전체구매 모달창 -->
+      <div class="all-modal">
+        <div class="modal-body">
+          <p><span>전체 상품을</span><br>
+            <span>구매하시겠습니까?</span></p>
+          <div class="all-button-parent">
+            <button id="all-popup-process">확인</button>
+            <button id="all-popup-cancel">취소</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container"></div>
+  </body>
+</html>
+
+
+
+            <!--
+              <tr class="cart-container">
+              <td><input type="checkbox" id="select-each"></td>
+              <td class="image-list"><img src="sample_img.jpg" width="125px" height="125px" alt="카트 1번"></td>
+              <td class="item-list">1차프로젝트 화이팅</td>
+              <td class="price-list">60,000원</td>
+              <td class="quantity-list">
+                <i class="fa-sharp fa-solid fa-circle-minus fa-lg" style="color: #000000;"></i>
+                <input class="quantity" size="1" value="1" min="0" max="99">
+                <i class="fa-sharp fa-solid fa-circle-plus fa-lg" style="color: #222326;"></i>
+              </td>
+              <td class="total-list">100,0000원</td>
+            </tr>
+              -->

@@ -1,0 +1,37 @@
+[
+    {
+      "product": "나의 첫 국어사전",
+      "price": "22,500원",
+      "imagePath": "/src/images/나의 첫 국어사전.jpg"
+    },
+    {
+      "product": "요술지팡이 이솝우화 전 20권, 그린키즈",
+      "price": "45,900원",
+      "imagePath": "/src/images/요술지팡이 이솝우화 전 20권, 그린키즈.jpg"
+    },
+    {
+      "product": "요미몬빅북 호기심나라 사운드북",
+      "price": "49,800원",
+      "imagePath": "/src/images/요미몬빅북 호기심나라 사운드북.jpg"
+    },
+    {
+      "product": "콩닥콩닥 감정표현 동화 (전10권)",
+      "price": "31,500원",
+      "imagePath": "/src/images/콩닥콩닥 감정표현 동화 (전10권).jpg"
+    },
+    {
+      "product": "생각콩콩 탈무드동화 전 10권",
+      "price": "31,500원",
+      "imagePath": "/src/images/생각콩콩 탈무드동화 전 10권.jpg"
+    },
+    {
+      "product": "스웨덴 인성동화 세트 전 12권",
+      "price": "36,000원",
+      "imagePath": "/src/images/스웨덴 인성동화 세트 전 12권.jpg"
+    },
+    {
+      "product": "꿈꾸는 윌리",
+      "price": "8,550원",
+      "imagePath": "/src/images/꿈꾸는 윌리.jpg"
+    }
+]

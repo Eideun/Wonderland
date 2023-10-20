@@ -1,0 +1,77 @@
+{
+  "dummyData": [
+    {
+      "orderId": "1005",
+      "orderDate": "2023-07-13",
+      "orderTotalPrice": "35550",
+      "orderState": "상품준비중",
+      "orderProductList": [
+        { "name": "아드님, 진지 드세요", "count": 1 },
+        { "name": "열두 살 창업 학교", "count": 1 },
+        { "name": "용기가 필요해", "count": 1 }
+      ]
+    },
+    {
+      "orderId": "1004",
+      "orderDate": "2023-07-08",
+      "orderTotalPrice": "28800",
+      "orderState": "상품준비중",
+      "orderProductList": [
+        { "name": "굿바이 칭찬 스티커", "count": 1 },
+        { "name": "서진이의 양보", "count": 1 },
+        { "name": "황금보의 존중", "count": 1 }
+      ]
+    },
+    {
+      "orderId": "1003",
+      "orderDate": "2023-07-07",
+      "orderTotalPrice": "23400",
+      "orderState": "배송준비중",
+      "orderProductList": [
+        { "name": "마음대로 학교", "count": 1 },
+        { "name": "무지개 봄봄 씨", "count": 1 }
+      ]
+    },
+    {
+      "orderId": "1002",
+      "orderDate": "2023-07-06",
+      "orderTotalPrice": "10800",
+      "orderState": "배송중",
+      "orderProductList": [{ "name": "걱정 세탁소", "count": 1 }]
+    },
+    {
+      "orderId": "1001",
+      "orderDate": "2023-07-06",
+      "orderTotalPrice": "15120",
+      "orderState": "주문취소",
+      "orderProductList": [{ "name": "영어동화 100편: 명작동화", "count": 1 }]
+    },
+    {
+      "orderId": "1000",
+      "orderDate": "2023-06-16",
+      "orderTotalPrice": "53370",
+      "orderState": "배송완료",
+      "orderProductList": [
+        { "name": "이상한 과자 가게 전천당", "count": 1 },
+        { "name": "우리 반 목소리 작은 애", "count": 1 },
+        { "name": "수상한 아이가 전학 왔다!", "count": 1 },
+        { "name": "샘마을 몽당깨비", "count": 1 },
+        { "name": "수상한 수학 감옥 아이들", "count": 1 }
+      ]
+    },
+    {
+      "orderId": "999",
+      "orderDate": "2023-05-06",
+      "orderTotalPrice": "16200",
+      "orderState": "배송완료",
+      "orderProductList": [{ "name": "하루 5분 뇌태교 동화", "count": 1 }]
+    },
+    {
+      "orderId": "998",
+      "orderDate": "2023-05-04",
+      "orderTotalPrice": "11400",
+      "orderState": "배송완료",
+      "orderProductList": [{ "name": "엄마아빠의 태교기도", "count": 1 }]
+    }
+  ]
+}

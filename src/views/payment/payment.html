@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1440, initial-scale=1">
+    <title>Wonderland</title>
+    <!--폰트-->
+    <link href="https://fonts.cdnfonts.com/css/sansita" rel="stylesheet">
+    <!--Bulma-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="payment.css">
+    <script type="text/javascript" src="payment.js" defer></script>
+    <!--주소찾기 API-->
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <link rel="stylesheet" href="../footer/footer.js"/>
+    <script src="../footer/footer.js"></script>
+    <link rel="stylesheet" href="/src/views/nav/nav.css" />
+    <script defer type="module" src="../nav/nav.js"></script>
+  </head>
+
+  <body>
+      <!--상단네비+로고-->
+      <nav>
+        <a class="nav-link" href="/src/views/register/register.html">회원가입</a>
+        <a class="nav-link" href="/src/views/login/login.html">로그인</a>
+        <a class="nav-link" href="/src/views/mypage/mypage.html">마이페이지</a>
+        <a class="nav-link" href="/src/views/cart/cart.html">장바구니</a>
+      </nav>
+      <div class="logo" style="display: block">
+        <h1>Wonderland</h1>
+      </div>
+
+
+      <!--장바구니>주문결제>결제완료 문구-->
+      <ul id="root-container">
+         <li class="root-list">
+             <span>장바구니</span>
+             <span>></span>
+             <span class="order-purchase">주문결제</span>
+             <span>></span>
+              <span>주문완료</span>
+         </li>
+     </ul>
+            <div class="upper-line"></div>
+
+        <!--배송지정보-->
+        <div id="main-container">
+            <div class="address-container">
+                    <span class="address-inform">배송지 정보</span>
+                <li>
+                    <span class="user-name">받으시는 분</span>
+                    <input class="name-input" placeholder="홍길동">
+                </li>
+
+                <li>
+                    <span class="user-number">연락처</span>
+                    <input class="number-input"  type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="010-0000-0000">
+                </li>
+                <li>
+                    <span class="user-address">주소</span>
+                    <input class="post-input" placeholder="우편번호" readonly>
+                    <button type="submit" class="post-search">주소찾기</button>
+                </li>
+                 <li><input class="first-address" readonly></li>
+                 <li><input class="second-address" placeholder="동,호수 등 상세하게 기입해주세요."></li>
+
+                 <li>
+                     <span class="user-order">요청사항</span>
+                     <input class="order-input"  placeholder="ex) 부재시 경비실에 맡겨주세요">
+                 </li>
+            </div>
+           
+            <!--우측 결제정보-->
+            <div class="payment-container">
+              <span class="order-inform">주문정보</span>
+                <div class="order-list">
+                     <div class="mini-container">
+                        <span class="item-list">주문상품</span>
+                     </div>
+                    <div class="list-container">
+                    <span class="empty-order">나의 첫 국어사전</span>
+                    <span class="empty-order">꿈꾸는 윌리</span>
+                    <span class="empty-order">스웨덴 인성동화 세트 전 12권</span>
+                    </div>
+                </div>
+                
+                <div class="price-list">
+                    <span class="total-price">상품 총액</span>
+                    <span class="empty-price">65,400원</span>
+                </div>
+                
+                <div class="delivery-list">
+                    <span class="delivery-price">배송비</span>
+                    <span class="empty-delivery">2,500원</span>
+                </div>
+
+                <div class="decision">
+                    <div class="split-line"></div>
+                    <span class="total-cost">총 결제금액</span>
+                    <span class="empty-total">67,900원</span>
+                    <button type="submit" class="order-button">결제하기</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="sub-container">
+            <div class="payment-method-container">
+                <span class="payment-method">결제수단</span>
+                 <ul class="payment-ul">
+                    <li>신용카드</li>
+                    <li>무통장 입금</li>
+                    <li>실시간 계좌이체</li>
+                     <li>휴대폰 결제</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-container"></div>
+
+        <div class="all-modal">
+            <div class="modal-body">
+              <p><span>전체 상품을</span><br>
+                <span>구매하시겠습니까?</span></p>
+              <div class="all-button-parent">
+                <button id="all-popup-process">확인</button>
+                <button id="all-popup-cancel">취소</button>
+              </div>
+            </div>
+          </div>
+          <div class="footer-container"></div>
+    </body>
+</html>
+

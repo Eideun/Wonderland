@@ -1,0 +1,445 @@
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
+  } 
+  @font-face {
+    font-family: 'Noto Sans thin';
+    font-style: normal;
+    font-weight: 300;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+  }
+  
+  
+  body {
+
+    font-family: "Sansita","Noto Sans", sans-serif;
+    margin: 0 auto;
+    list-style-type: none;
+    min-width: 1200px;
+  }
+  
+  
+ 
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 20px 50px 0;
+  }
+  
+  .nav-link {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Noto Sans KR", sans-serif;
+    text-decoration: none;
+  }
+  
+  /* 로고 */
+  h1 {
+    text-align: center;
+    margin: 40px auto;
+    font-size: 40px;
+    font-weight: 900;
+    color: #a269ff;
+    font-family: "Sansita", "Noto Sans KR", sans-serif;
+    font-style: italic;
+    font-size: 50px;
+  }
+  
+  h1 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h1 a:hover {
+    color:inherit;
+  }
+  
+    
+
+  /* 장바구니>주문결제>결제완료 문구 */
+  #root-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: "Noto Sans thin";
+    font-size: 12px;
+    font-weight: 600;
+    color: grey;
+  }
+  
+  .root-list {
+    display: flex;
+    align-items: baseline;
+    flex-basis: 950px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .order-purchase {
+    font-size: 25px;
+    font-family: "Noto Sans";
+    font-weight: 800;
+    color: #333333;
+  }
+
+
+.upper-line {
+    display: flex;
+    align-items: center;
+    background-color: #a269ff;
+    width: 1200px;
+    margin: 10px auto 0;
+    padding: 10px 0;
+    color: white;
+    font-weight: 500;
+}
+
+#main-container {
+    list-style-type: none;
+    display: flex;
+    width: 1200px;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+.address-container {
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 -10px 10px -10px #606060,
+            inset -10px 0 10px -10px #606060,
+            inset 10px 0 10px -10px #606060;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 20px 0 10px 40px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #333333;
+    line-height: 2.0;
+    width: 730px;
+    margin-right: 80px;
+}
+
+.address-inform {
+  width: 100%;
+  display: flex;
+  font-size: 35px;
+  margin: 0 auto;
+  font-weight: 800;
+  justify-content: center;
+  padding-bottom: 40px;
+  padding-right: 40px;
+}
+
+.user-name {
+    margin-right: 100px;
+}
+
+.user-number {
+    margin-right: 139px;
+}
+
+.user-address {
+    margin-right: 156px;
+}
+
+.first-address,
+.second-address {
+    margin-left: 195px;
+}
+
+.address-container > li {
+    margin-bottom: 20px;
+}
+
+/* 결제카트 */
+.payment-container {
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 0 -10px 10px -10px #606060,
+          inset -10px 0 10px -10px #606060,
+          inset 10px 0 10px -10px #606060;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  line-height: 2.0;
+  width: 480px;
+  height: 540px;
+  background-color: #F1E9FF;
+  padding-top: 20px;
+  color: #333333;
+  font-size: 18px;
+}
+
+.order-inform {
+  display: flex;
+  font-size: 35px;
+  margin: 0 auto;
+  font-weight: 800;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.order-list,
+.price-list,
+.delivery-list,
+.decision {
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+
+.delivery-list {
+  padding-bottom: 20px;
+}
+
+.split-line {
+  border-top: 1px dashed gray;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+.decision {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.order-button {
+  display: flex;
+  font-family: "Noto Sans", sans-serif;
+  margin: 20px 0 0 0;
+  padding-left: 140px;
+  width: 350px;
+  height: 50px;
+  padding-top: 10px;
+  background-color: #a269ff;
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.order-button:hover {
+ background-color: #A629FF;
+ transition: 0.2s ease;
+}
+
+
+/* 결제수단 선택 */
+
+#sub-container {
+  list-style-type: none;
+  display: flex;
+  width: 1200px;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+
+.payment-method-container {
+border: none;
+border-radius: 10px;
+box-shadow: inset 0 -10px 10px -10px #606060,
+        inset -10px 0 10px -10px #606060,
+        inset 10px 0 10px -10px #606060;
+margin-top: 20px;
+font-size: 14px;
+font-weight: 200;
+padding: 20px 0 30px 30px;
+font-weight: 500;
+font-size: 18px;
+letter-spacing: 1px;
+color: #333333;
+line-height: 2.0;
+width: 676px;
+}
+
+.payment-method {
+  display: block;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-bottom: 1px dotted #333333;
+  
+}
+
+.payment-ul li {
+  display: inline-flex;
+  justify-content: center;
+  border: 1px dotted #ccc;
+  margin-top: 20px;
+  width: calc((100% - 40px) / 4);
+  border-radius: 10px;  
+  background: #fff;
+  cursor: pointer;
+}
+
+.payment-ul li:hover {
+  border: 1px groove #8e8e8e;
+}
+
+/* input 디자인 */
+
+::placeholder {
+    font-family: "Noto Sans";
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #cfcdcd;
+
+}
+
+.name-input,
+.number-input,
+.first-address,
+.second-address,
+.order-input {
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 3px solid #cfcdcd;
+    
+}
+
+.post-input {
+    border-radius: 5px;
+    width: 180px;
+    height: 40px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    border: 3px solid #cfcdcd;
+    margin-right: 15px;
+}
+
+.order-input {
+    margin-left: 121px;
+}
+
+.post-search {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: #AAAAAA;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.post-search:hover {
+  background: #333333;
+  transition: 0.2s ease;
+}
+
+
+
+.mini-container,
+.list-container {
+
+  display: inline-flex;
+}
+
+.list-container {
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 100px;
+  font-size: 14px;
+}
+
+.empty-price {
+  margin-left: 200px;
+}
+
+.empty-delivery {
+  margin-left: 234px;
+}
+
+.empty-total {
+  margin-left: 165px;
+}
+
+/* 모달 */
+.order-modal,
+.delete-modal,
+.no-modal,
+.all-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.order-modal.show,
+.delete-modal.show,
+.no-modal.show,
+.all-modal.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-body {
+  position: relative;
+  width: 320px;
+  height: 180px;
+  margin: auto;
+  padding-top: 40px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+  font-weight: 600;
+}
+
+.order-button-parent,
+.delete-button-parent,
+.all-button-parent {
+  margin-top: 30px;
+}
+
+#order-popup-process,
+#order-popup-cancel,
+#delete-popup-process,
+#delete-popup-cancel,
+#no-popup-process,
+#all-popup-process,
+#all-popup-cancel {
+  color: white;
+  font-weight: 800;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px 30px;
+  border: none;
+  cursor: pointer;
+}
+
+#order-popup-process,
+#delete-popup-process,
+#all-popup-process,
+#no-popup-process {
+  background: #a269ff;
+  margin-right: 20px;
+}
+
+#no-popup-process {
+  margin-right: 0;
+  margin-top: 30px;
+}
+
+#order-popup-cancel,
+#delete-popup-cancel,
+#all-popup-cancel {
+  background: #767676;
+}
